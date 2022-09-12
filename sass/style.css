@@ -1,0 +1,16 @@
+.block {
+  min-height: 50vh;
+  padding: 5%;
+}
+@media screen and (min-width: 576px) {
+  .block {
+    padding: 5%;
+  }
+}
+.block__title {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.block__paragraph {
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */

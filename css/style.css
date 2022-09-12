@@ -1,0 +1,15 @@
+.navbar{
+    z-index: 100;
+}
+.transparency{
+    background-color: lighten(black,50%) ;
+}
+.h-50{
+    height: 50vh;
+}
+@media screen and (min-width:768px){
+    .hero{margin-top: -130px}
+}
+.copyright{
+    background-color: rgba(0, 0, 0, 0.7);
+}
