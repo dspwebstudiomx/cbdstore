@@ -1,39 +1,49 @@
 .hero {
+  height: 70vh;
   background: rgb(2, 0, 36);
-  background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
-  min-height: 50vh;
-  padding: 5%;
-  color: #fff;
+  background: linear-gradient(45deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 0%, rgb(0, 212, 255) 100%);
+  color: #fafafa;
+}
+.hero__description {
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
   justify-content: center;
 }
-@media screen and (min-width: 576px) {
-  .hero {
-    padding: 5%;
-  }
-}
 .hero__title {
-  font-size: 48px;
   text-transform: uppercase;
 }
-.hero__paragraph {
-  font-size: 18px;
+.hero__image {
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.block {
-  min-height: 50vh;
-  padding: 5%;
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-@media screen and (min-width: 576px) {
-  .block {
-    padding: 5%;
-  }
+
+.separador {
+  padding: 1em;
 }
-.block__title {
-  font-size: 32px;
-  text-transform: uppercase;
+
+.container {
+  padding: 5em;
 }
-.block__paragraph {
-  font-size: 24px;
+
+/* Linea Azul */
+hr.linea-azul {
+  height: 4px;
+  width: 50%;
+  background-color: #090979;
+}
+
+/* Sobre Mi */
+.sobre-mi {
+  background-color: #fafafa;
 }/*# sourceMappingURL=style.css.map */

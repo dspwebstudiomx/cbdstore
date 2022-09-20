@@ -20,121 +20,102 @@
 </head>
 
 <body>
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container-fluid">
 
-            <header>
-                <nav class="navbar navbar-expand-md navbar-dark shadow-0 bg-opacity-100 w-100">
-                    <a class="navbar-brand px-1" href="#">
-                        <img src="img/dsp-white.png" alt="logo dsp" height="100">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                        data-mdb-target="#navbar_menu" aria-controls="navbar_menu" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <i class="fas fa-bars text-primary"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar_menu">
-                        <div class="navbar-nav p-4 ms-auto text-right">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">Features</a>
-                            <a class="nav-link" href="#">Pricing</a>
-                            <a class="nav-link disabled">Disabled</a>
+    <header>
+        <!-- Navegador -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
                         </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Fin Navegador -->
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container-fluid p-0" >
+                <div class="row">
+
+                    <!-- Titulo y descripcion sitio -->
+                    <div class="col-6 p-5">
+                        <section class="hero__description">
+                            <h1 class="hero__title">Diseño & Desarrollo Web</h1>
+                            <div class="separador"></div>
+                            <p class="hero__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, odit, aliquam aut quis iusto
+                                recusandae eaque consequatur beatae consequuntur et odio modi.</p>
+                        </section>
                     </div>
-                </nav>
-            </header>
+                    <!-- Fin Titulo y descripcion sitio -->
 
-            <main>
-
-                <!-- Hero -->
-                <section class="block">
-                    <div class="container-fluid">
-                        <div class="row">
-        
-                            <!-- Hero Description -->
-                            <div class="col-12 col-md-6 hero__description">
-        
-                                <!-- Title -->
-                                <h1 class="hero__title">
-                                    Diseño y Desarrollo Web
-                                </h1>
-        
-                                <!-- Spacing -->
-                                <div class="row_spacing"></div>
-        
-                                <!-- Paragraph -->
-                                <p class="hero__paragraph">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto distinctio corporis dolorum
-                                    error
-                                    porro aliquam rerum, itaque debitis quo eligendi, sint accusantium non, dolore ipsam qui
-                                    odit
-                                    impedit ea facere?
-                                </p>
-        
-                                <!-- Spacing -->
-                                <div class="row_spacing">
-                                    <!-- <div class="row_spacing"></div> -->
+                    <!-- Carousel de imagenes -->
+                    <div class="col-6">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100 hero__image"
+                                        alt="Wild Landscape" />
                                 </div>
-        
-                                <!-- Button (Ver portafolio) -->
-                                <a href="https:\\dspwebstudio.com" target="_blank">
-                                    <button type="button" class="btn btn-primary btn-lg hero__button letter-spacing">
-                                        Ver portafolio
-                                    </button>
-                                </a>
-        
+                                <div class="carousel-item">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp" class="d-block w-100 hero__image"
+                                        alt="Camera" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100 hero__image"
+                                        alt="Exotic Fruits" />
+                                </div>
                             </div>
-        
-                            <!-- Hero Image -->
-                            <div class="col-12 col-md-6 hero__image">
-                                <figure>
-                                    <img class="hero__img" src="img/who we are photo 1.jpg.png" alt="hombre con traje negro">
-                                </figure>
-                            </div>
-        
                         </div>
                     </div>
-                </section>
-    </section>
-    <!-- End Hero  -->
-
-
-    <!-- Secciones -->
-    <section class="block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="block__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                    <p class="block_paragraph">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut laudantium molestias, expedita
-                        excepturi sed atque perferendis repellat aliquam nihil magni. Accusantium blanditiis natus nisi
-                        autem iusto quae quidem asperiores sapiente!
-                    </p>
-                </div>
-                <div class="col-md-6">
+                    <!-- Fin Carousel de imagenes -->
 
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- Fin Hero -->
 
-    </section>
+        <!-- Sobre Mi -->
+        <section class="sobre-mi">
+            <div class="container">
+                <div class="row">
+                    <!-- Descripcion -->
+                    <div class="col-6">
+                        <h2>Sobre Mí</h2>
+                        <hr class="linea-azul"></hr>
+                        <div class="separador"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto est quam dolorem cum? Fuga labore excepturi ad illum voluptas? Illum deleniti optio earum molestias veniam pariatur cum minima iusto saepe?</p>
+
+                    </div>
+                    <!-- Fin Descripcion -->
+
+                    <!--  -->
+
+                </div>
+            </div>
+        </section>
+        <!-- Fin Sobre Mi -->
     </main>
-    </div>
-    <!-- Secciones -->
-
-
-
-    <!-- FOOTER -->
-    <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3 copyright">
-            © 2022 Copyright:
-            <a class="text-dark" href="https://dspwebstudio.com/" target="_blank">dspwebstudio.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- FOOTER -->
 
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
