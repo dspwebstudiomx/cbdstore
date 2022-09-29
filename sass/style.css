@@ -40,10 +40,33 @@
 hr.linea-azul {
   height: 4px;
   width: 50%;
-  background-color: #090979;
+  background-color: #25477a;
 }
 
 /* Sobre Mi */
 .sobre-mi {
   background-color: #fafafa;
+}
+
+/* Servicios */
+.servicios {
+  background-color: #193053;
+  padding: 120px;
+}
+
+.card {
+  border: 2px solid #25477a;
+  width: 240px;
+}
+
+.card-body {
+  border-radius: 0 !important;
+}
+
+.color__primary {
+  color: #25477a;
+}
+
+.fas {
+  color: #25477a;
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,8 @@
 @import hero
 @import block
 
+$color--primary: #25477a
+
 *
     margin: 0
     padding: 0
@@ -16,7 +18,23 @@
 hr.linea-azul
     height: 4px
     width: 50%
-    background-color: #090979
+    background-color: $color--primary
 /* Sobre Mi */
 .sobre-mi    
     background-color: #fafafa
+
+/* Servicios */
+.servicios
+    background-color: darken($color--primary,10)
+    padding: 120px
+.card
+    border: 2px solid $color--primary
+    width: 240px 
+.card-body
+    border-radius: 0 !important
+
+.color__primary
+    color: $color--primary
+
+.fas
+    color: $color--primary
