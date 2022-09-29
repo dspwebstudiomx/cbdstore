@@ -2,11 +2,17 @@
 @import block
 
 $color--primary: #25477a
+$title--font-size: 21px
+$text--font-size: 14px
+
+$card__title--font-size: 16px
 
 *
     margin: 0
     padding: 0
     overflow-x: hidden
+
+
 
 .separador
     padding: 1em
@@ -22,14 +28,49 @@ hr.linea-azul
 /* Sobre Mi */
 .sobre-mi    
     background-color: #fafafa
+    padding-bottom: 150px
+    &__title
+        font-size: $title--font-size
+    &__text
+        font-size: $text--font-size
 
 /* Servicios */
 .servicios
     background-color: darken($color--primary,10)
-    padding: 120px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100vw
+    height: 300px
+.z-index-99
+    position: absolute
+    z-index: 998
+
+.top
+    margin-top: -320px
+    z-index: 999
+
+.cards__container
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100% !important
+    padding: 0 80px
 .card
     border: 2px solid $color--primary
-    width: 240px 
+    width: auto
+    margin: 16px
+    min-height: 420px
+    padding: 5%
+    @media screen and (min-width: 1650px)
+        min-height: 340px
+    
+    &__title
+        text-transform: uppercase
+        text-align: center
+        font-size: $card__title--font-size
+    &__text
+        font-size: $text--font-size
 .card-body
     border-radius: 0 !important
 
